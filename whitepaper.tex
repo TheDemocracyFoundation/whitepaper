@@ -22,6 +22,10 @@
 \geometry{margin=1in}
 \usepackage{graphicx}
 \usepackage[compact]{titlesec}
+
+\usepackage{blindtext, subfig}
+\usepackage{dblfloatfix}
+
 \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus -.2ex}{1.5ex plus 1ex}
 \titlespacing*{\subsection}{0pt}{3.5ex plus 1ex minus -.2ex}{1.5ex plus 1ex}
 \titlespacing*{\subsubsection}{0pt}{3.5ex plus 1ex minus -.2ex}{1.5ex plus 1ex}
@@ -317,6 +321,11 @@ Countries, universities, corporations, unions and in general any form of communi
 
 Users from one community can also act as developers and add features to the platform, that would also be available and benefit everyone. Different communities will decide which features to enable and how to configure them, by opening an issue and reaching consensus on the preferred value.
 
+\begin{figure*}[hb]
+\centering
+\resizebox{45mm}{!}{\input{wreath.pdf_tex}}
+\label{TDFlogo}
+\end{figure*}
 
 \subsection{Protection against the abuse of power} \label{abuse}
 
@@ -326,19 +335,14 @@ In a global academic model, the large number of users are spread in many countri
 
 In a national model, the parameters are similar. There would be millions of users, making it impossible to bribe a majority of them, and moreover their great numbers would filter each top proposal multiple times and easily detect fraudulent or deceitful incentives.
 
-
 \subsection{Accountability} \label{accountability}
 
 The design of our system does not require moderators or an authority of any kind; users themselves have the right and accountability for the operation of the system, since decided outcomes will affect their future. Liability is split evenly among every user, and that increases the feeling of prudence and responsibility, in contrast to today's delegative systems that place the individual in a passive role.
 
 In a global academic model, even though users will need to make a thorough review of the literature before suggesting a solution, their proposals will be checked by multiple peers, and therefore if something is inaccurate, incomplete or contains vested interests, it would be highlighted by simply creating feedback nodes and then forks (as described in section 5 of the description).
 
-\bigskip
 
-\begin{figure}[h]
-\centering
-\resizebox{45mm}{!}{\input{wreath.pdf_tex}}
-\label{TDFlogo}
-\end{figure}
+
+
 
 \end{document}
