@@ -5,7 +5,7 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{multicol}
-\usepackage{titlesec}
+\usepackage[compact]{titlesec}
 \usepackage[hidelinks]{hyperref}
 
 % Document formatting
@@ -13,16 +13,16 @@
 \titlelabel{\thetitle.\quad}
 \setcounter{secnumdepth}{5}
 \frenchspacing
-\titlespacing*{\section} {0pt}{3.5ex plus 0.5ex minus .15ex}{2.3ex plus .2ex}
-\titlespacing*{\subsection} {0pt}{3.25ex plus 0.5ex minus .15ex}{1.5ex plus .2ex}
-\titlespacing*{\subsubsection} {0pt}{3.0ex plus 0.5ex minus .15ex}{1.0ex plus .2ex}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\setlength{\headsep}{0pt}
-\setlength{\topskip}{0pt}
-\setlength{\topmargin}{0pt}
-\setlength{\topsep}{0pt}
-\setlength{\partopsep}{0pt}
+%\titlespacing*{\section} {0pt}{3.5ex plus 0.5ex minus .15ex}{2.3ex plus .2ex}
+%\titlespacing*{\subsection} {0pt}{3.25ex plus 0.5ex minus .15ex}{1.5ex plus .2ex}
+%\titlespacing*{\subsubsection} {0pt}{3.0ex plus 0.5ex minus .15ex}{1.0ex plus .2ex}
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+%\setlength{\topmargin}{0pt}
+%\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{0pt}
 
 % Opening
 \font\titlefont=cmr12 at 40pt
@@ -185,7 +185,7 @@ The default criteria, although configurable, are the following:
 \item Where will the change occur?
 \item How much are the associated costs and/or expected earnings?
 \item How long will the change last?
-\item Are there any special requirements? (such as prerequisite changes in existing systems/policies in order for the proposal to be feasible and valid)
+\item Are there any special requirements? (such as prerequisite changes in existing systems/policies)
 \end{itemize}
 
 In each individual criterion, attachments such as pictures \{can\} be added to support the arguments of the user. References to scientific articles or open data can also be added. Users are able to provide feedback to each criterion by clicking on predefined phrases (\{“Biased”, “Needs more work”, “Not enough info”, “I support this”, “I don't support this”, “Unsafe”, “Not inclusive”\}). This provides a feedback mechanism for the strengths and weaknesses of each criterion.
@@ -330,6 +330,12 @@ The operational cost of the platform will be virtually zero. The nature of the s
 
 In a global model of academics or in a national governance model, the platform could be also integrated along with blockchain technologies to remove the reliance on system administrators and server hosting. Every user will take part in securing the platform by validating its contents, rendering the database tamper-proof.
 
+\begin{figure*}[hb]
+\centering
+\resizebox{30mm}{!}{\input{wreath.pdf_tex}}
+\label{TDFlogo}
+\end{figure*}
+
 \subsection{Trust and Insight} \label{trust}
 
 The element of our system that strengthens trust and insight is the free and open source nature of the platform. Anyone can review and verify the code and contribute to the development. In addition, values used for configuration are selected by the users, allowing for complete control of the operational core.
@@ -337,12 +343,6 @@ The element of our system that strengthens trust and insight is the free and ope
 The distributed nature of the blockchain breeds trust, as votes and data do not reside in a single point of failure, vulnerable to intrusion. Only verified changes to this database are allowed, thereby preventing vote manipulation, or disruptions of service.
 
 \subsection{Flexibility} \label{flexibility}
-
-\begin{figure*}[hb]
-\centering
-\resizebox{45mm}{!}{\input{wreath.pdf_tex}}
-\label{TDFlogo}
-\end{figure*}
 
 Countries, universities, corporations, unions and in general any form of community, society or group can use the platform as their decision-making tool with a multitude of options. Our platform is not a closed and final product, but a collection of numerous, out-of-the-box options and systems for societies and communities to customize to their accord. All the features of our platform and all its subsystems are optional and configurable and can be activated or deactivated as decided by the people.
 
