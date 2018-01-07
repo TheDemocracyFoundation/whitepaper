@@ -238,9 +238,13 @@ Once a node is part of new cycle, it still exists in the previous one (even if i
 
 \subsection{Visual indications} \label{visual}
 
-The color of nodes indicates the \{percentage of support\}. The color of a node is altered for every \{5\%\} change of support. The size of each node indicates its \{participation\}. Therefore, the shift of support to an improved fork will also cause changes in the size and color for both nodes, making the overview of the deliberation easier.
+Each node has a “score” label in the top-right corner, displaying the number of upvotes and downvotes for feedback and poll nodes, and the number of favor for forks and proposal. 
 
-The connection between each node indicates its relationship to the previous one. A \{single line\} indicates reference, a \{dashed line\} indicates feedback, a \{dotted line\} a poll and a \{double line\} indicates a fork to the previous node.
+For an even faster overview, forks and proposals \{are\} colored, with their color indicating the \{number of favor\} relative to the other nodes in the cycle. The shift of support to an improved fork will also cause changes in the color for both nodes, making the overview of the deliberation easier.
+
+In feedback and poll nodes, the node has always \{white color\}, but the score label is partly \{green\} and partly \{red\}, with each of those two colors occupying area relative to the upvote/downvote ratio of the node.
+
+The link type between each node indicates its relationship to the previous one. A \{single line\} indicates reference, a \{dashed line\} indicates feedback, a \{dotted line\} a poll and a \{double line\} indicates a fork to the previous node. The outline type of each node is similar to its link type.
 
 \section{Referendums} \label{referendums}
 
@@ -324,17 +328,17 @@ Additionally, as analyzed in the description, there are certain mechanisms in pl
 
 The implementation of a global academic model could be an effective way in addressing global challenges. Due to their advanced expertise, academics are the most capable individuals in identifying them and suggesting the required course of action for their resolution. Through our platform, the deliberation section would efficiently allow them to reach consensus and develop guidelines for governments. Guidelines will also be developed towards individual citizens, magnifying the effectiveness.
 
+\begin{figure*}[hb]
+\centering
+\resizebox{20mm}{!}{\input{wreath.pdf_tex}}
+\label{TDFlogo}
+\end{figure*}
+
 \subsection{Resources and Financing} \label{resources}
 
 The operational cost of the platform will be virtually zero. The nature of the software, being free and open source will offset development costs to volunteers that wish to improve it for their own communities.
 
 In a global model of academics or in a national governance model, the platform could be also integrated along with blockchain technologies to remove the reliance on system administrators and server hosting. Every user will take part in securing the platform by validating its contents, rendering the database tamper-proof.
-
-\begin{figure*}[hb]
-\centering
-\resizebox{30mm}{!}{\input{wreath.pdf_tex}}
-\label{TDFlogo}
-\end{figure*}
 
 \subsection{Trust and Insight} \label{trust}
 
