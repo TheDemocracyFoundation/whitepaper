@@ -89,7 +89,7 @@ Each cycle is a randomly selected subgroup of the entire population, organized t
 
 The only cycle level a user can submit a proposal or issue to is the bottom one. If their submission is well-supported, it is promoted to the next level, which includes cycles of larger population percentage. If the proposal reaches the top level, and receives adequate support, it is converted to a referendum. Similarly, if an issue reaches the top level and receives adequate support, it is then exhibited to the entire population.
 
-The number of cycles \{automatically\} adjusts according to the total number of registered users. The top level consists of \{10\} cycles that each contain \{10\%\} of the total population. Each level below contains \{$\frac{1}{3}$\} of the population of the previous-level cycles, and it is accordingly divided into \{3\} times the number of cycles. The addition of levels continues until the cycles in the bottom level contain \{less\} than \{1 thousand\} users. Using those values, a community with 1 thousand users will have only 1 level (with 10 cycles of 100 people each) while a community of 100 million users will contain 10 levels.
+The number of cycles \{automatically\} adjusts according to the total number of registered users. The top level consists of \{10\} cycles that each contain \{10\%\} of the total population. Each level below contains \{$\frac{1}{3}$\} of the population of the previous-level cycles, and it is accordingly divided into \{3\} times the number of cycles. The addition of levels continues until the cycles in the bottom level contain \{less\} than \{1 thousand\} users. Using those values, a community with 1 thousand users will have only 1 level (with 10 cycles of 100 people each) while a community of 1 million users will contain 6 levels.
 
 Cycles \{continuously\} check the active population and distribute the users evenly, to prevent having one cycle being at capacity and another one empty. Both cycles and their levels, are not active by default, but they activate as participation increases. A cycle \{must\} reach at least \{10\%\} of its capacity before another one is enabled, to prevent users from being too spread in the case of low participation. In order for a level to be activated, \{10\%\} of the total cycles that are contained at \{2\} levels below must be already active. Therefore, even though a community may have many levels, they remain inactive if participation is low.
 
@@ -98,8 +98,6 @@ If the platform is configured to check for the location of a user (e.g. a countr
 \subsection{Capital} \label{capital}
 
 There \{is\} a time limit after the submission of an element before a user can submit a new one. With the “Capital” subsystem, a user can make a maximum of \{1\} submission at all times, even if they have not submitted anything new for multiple renewal terms. This submission capital renewal rate, although configurable, is by default proportionate to the number of users present within a cycle. The \{number of users\} in a \{cycle\} is then converted to \{seconds\}, and that time period is the time a user has to wait between submissions, with a minimum of \{10 minutes\}. 
-
-With those values, a user in the bottom cycle that contains 0.1\% of a population of 10 million, would have to wait 10 thousand seconds (2 hours and 46 minutes) between submissions. In higher cycles with more users, the time between submissions would be increased.
 
 \subsection{The 33-60 principle} \label{principle}
 
@@ -356,17 +354,17 @@ In a global academic model, the large number of users are spread in many countri
 
 In a national model, the parameters are similar. There would be millions of users, making it impossible to bribe a majority of them, and moreover their great numbers would filter each top proposal multiple times and easily detect fraudulent or deceitful incentives.
 
-\begin{figure*}[hb]
-\centering
-\resizebox{20mm}{!}{\input{wreath.pdf_tex}}
-\label{TDFlogo}
-\end{figure*}
-
 \subsection{Accountability} \label{accountability}
 
 The design of our system does not require moderators or an authority of any kind; users themselves have the right and accountability for the operation of the system, since decided outcomes will affect their future. Liability is split evenly among every user, and that increases the feeling of prudence and responsibility, in contrast to today's delegative systems that place the individual in a passive role.
 
 In a global academic model, even though users will need to make a thorough review of the literature before suggesting a solution, their proposals will be checked by multiple peers, and therefore if something is inaccurate, incomplete or contains vested interests, it would be highlighted by simply creating feedback nodes and then forks (as described in section 5 of the description).
+
+\begin{figure*}[hb]
+\centering
+\resizebox{20mm}{!}{\input{wreath.pdf_tex}}
+\label{TDFlogo}
+\end{figure*}
 
 \end{multicols}
 \end{document}
