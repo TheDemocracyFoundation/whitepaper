@@ -7,6 +7,10 @@
 \usepackage{multicol}
 \usepackage[compact]{titlesec}
 \usepackage[hidelinks]{hyperref}
+\usepackage{eso-pic}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{contour}
 
 % Document formatting
 \geometry{margin=1in}
@@ -24,6 +28,18 @@
 \setlength{\topsep}{0pt}
 \setlength{\partopsep}{0pt}
 
+\newcommand\BackgroundIm{
+\put(0,0){
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[height=\paperheight,width=\paperwidth, trim=2cm 2cm 2cm 2cm]{Bierstadt.jpg}%
+\vfill
+}}}
+
+\contourlength{1pt}
+\contournumber{5} 
+
 % Opening
 \font\titlefont=cmr12 at 40pt
 \title{%
@@ -34,6 +50,25 @@
 
 \begin{document}
 
+\begin{titlepage}
+\centering
+\AddToShipoutPicture*{\BackgroundIm}
+{\bfseries\Huge\color{white} \contour{black}{The Democracy Foundation}\\}
+\vspace*{\fill}
+\begin{figure*}[hb]
+\centering
+\resizebox{100mm}{!}{\input{wreath2.pdf_tex}}
+\label{TDFlogoInv}
+\end{figure*}
+\vspace*{\fill}
+\begin{flushleft}
+{\bfseries\fontsize{2.5cm}{2cm}\selectfont\color{white} \contour{black}{Epitome}\\}  
+\end{flushleft}
+\begin{flushleft}
+{\bfseries\fontsize{1cm}{2cm}\selectfont\color{white} \contour{black}{An instrument built for change}\\}  
+\end{flushleft}
+
+\end{titlepage}
 \footnotetext[1]{\textbf{The Democracy Foundation} - \url{http://democracy.foundation/} \\
 
 \includegraphics[height=10.0mm]{CC.jpg} \\
@@ -107,7 +142,7 @@ The ``33-60'' principle describes the required condition of at least \{33\%\} of
 \centering
 \includegraphics[width=140mm]{FigureA.jpg}
 % FigureA.jpg: 2732x1537 px, 72dpi, 96.44x54.25 cm, bb=0 0 2734 1538
-\caption{The Issues portal.}
+\caption{An illustrated concept of the issues portal.}
 \label{figure1}
 \end{figure*}
 
@@ -194,7 +229,7 @@ If an issue no longer needs resolving, a user can simply create a proposal that 
  \centering
  \includegraphics[width=140mm]{FigureB.jpg}
  % FigureA.jpg: 2732x1537 px, 72dpi, 96.44x54.25 cm, bb=0 0 2734 1538
- \caption{The Deliberation system.}
+ \caption{An illustrated concept of the deliberation system.}
  \label{figure2}
 \end{figure*}
 
