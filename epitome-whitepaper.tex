@@ -287,13 +287,27 @@ A proposal that was promoted to a higher cycle, has a \{golden\} outline around 
 
 \section{Referendums} \label{referendums}
 
-Referendums are proposals which have been widely supported, and are now available for voting by the entire community. For a referendum to be accepted, the required participation level would need to be \{33\%\} of the \{entire\} registered population, not only the currently active one.
+Referendums are proposals which have been widely supported, and are now available for voting by the entire community. 
 
+\subsection{Proposal promotion} \label{proposalpromotion}
 If in a top-level cycle a proposal “A” achieves \{20\%\} favor and is therefore ready to convert to a referendum, a check is run through the other top-level cycles to determine if there is another proposal gaining more than \{1\%\} support per \{minute\}. If there is indeed one (or more) proposal “B” that is gaining support fast, it halts the conversion of proposal “A” to a referendum until “B” achieves \{20\%\} favor, in order to introduce them simultaneously as referendums and avoid the problem of a better solution being succeeded by an inferior one, only because it required more time to mature to an adequate level. If more than one proposals are introduced as referendums, the voting mechanism switches from yes-or-no to ranked voting.
 
 If the rate of support of proposal “B” drops under \{1\%\} per \{minute\}, the conversion halts, records the value at which the rate dropped, and re-assesses its rate of support in \{15 minutes\}. Recording the level of support at which the rate dropped is essential, to avoid the exploitation from groups that keep favoring and unfavoring continuously to deliberately sabotage a proposal.
 
-As soon as a referendum has successfully been accepted, it will be indexed in a separate section, so that users will have an available portal to view the policies in effect.
+\subsection{Voting process} \label{process}
+For a referendum to be valid, the required participation level would need to be \{33\%\} of the \{entire\} registered population, not only the currently active one. The most popular choice can be determined either by simple plurality, or based on the outcome of a ranked-voting process. As soon as the required threshold of acceptance is achieved, the proposal is promoted to a policy, otherwise the referendum is expired after \{30 days\}.
+
+\section{Policies} \label{policies}
+Following the selection of a proposal, the issue and the non-selected proposals are archived for future reference. The selected proposal is indexed along with the rest of the active policies of the community.
+
+\subsection{Ever-voting} \label{evervoting}
+Users that previously did not vote for this proposal \{are\} able to vote for it, and users that previously supported it \{are\} able to rescind their vote, even after the voting process has ended. Ever-voting allows the retirement of outdated or irrelevant policies, the demonstration of change in support in response to new information, and the expression of dissatisfaction in regards to proposal implementation.
+
+The history of support of each policy is available to users. If a proposal requires time-bound stages for its implementation, such as a construction, then popular support can be displayed in snapshots of time and should remain over the necessary threshold for the next stage to begin.
+
+If the support of a policy drops below the required threshold to be active, it would notify all affected users, and invite them to examine the situation. If it drops below \{half\} of the required acceptance threshold, the policy is removed from the active policy portal. The referendum is then re-activated and all the proposals re-introduced.
+
+Personal emotions about events can cause dramatic, short-term shifts in voter opinion, but tracking the support of a policy over time instead of one point in time allows for a more reliable assessment of public opinion. Ever-voting prohibits opportunists from proposing policies based on short-term mood swings, and does not impose mandatory actions based on a deadline at one point in time. Through ever-voting, the individual is then not only the main decision making source of the society, but also a stakeholder and a living component of it.
 
 \section{Implementation models} \label{implementation}
 
